@@ -28,6 +28,7 @@
     display: none;
   }
 
+
 /* home */
 .home{
     background: url(../img/mainBackground2.jpeg) no-repeat top;
@@ -140,13 +141,154 @@
   margin-left:20px;
   margin-right:20px;
 }
+/* project */
+#project{
+  margin-top: 60px;
+}
 
+#project .container h2{
+  text-align: center;
+  font-size: 2.3rem;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+#project .container .project_content{
+  display: flex;
+  margin-bottom: 60px;
+
+}
+
+#project .container .project_content{
+  justify-content: center;
+}
+#project .container .project_content .project_left{
+  margin-right: 100px;
+}
+
+#project .container .project_content .project_left img{
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  border: 8px solid #95a5a6;
+}
+#project .container .project_content .project_right{
+  width: 500px;
+  height: 315.97px;
+}
+#project .container .project_content .project_right p{
+  font-size: 1.9rem;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+#project .container .project_content .project_right .content{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.1rem;
+  line-height: 35px;
+  font-weight: 300;
+
+} 
+#project .container .project_content .project_right ul{
+  display: flex;
+  flex-direction: row;
+  margin-top: 20px;
+}
+#project .container .project_content .project_right li{
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+#project .container .project_content .project_right li:hover{
+  color: #95a5a6;
+  transition: 0.7s;
+}
+#project .container .project_content .project_right li:first-child{
+  margin-right: 20px;
+}
+
+/* contact */
+#contact{
+  padding-top: 60px;
+}
+#contact .container{
+  width: 0 auto;
+  height: 150%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+#contact .container h2{
+  text-align: center;
+  font-size: 2.3rem;
+  font-family:'Open Sans', sans-serif;
+  font-weight: 700;
+  margin-bottom: 60px;
+}
+#contact .container .contact{
+  margin-bottom: 30px;
+}
+#contact .container .contact .name{
+    font-size: 3rem;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+
+  #contact .container .contact .email{
+    font-family:'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 2rem; 
+  }
+
+  #contact .container .contact .email:hover{
+    color: #95a5a6;
+    transition: 0.6s;
+  }
+
+  #contact .container .contact ul{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: 6rem;
+  
+  }
+  #contact .container .contact li:hover{
+    color: #95a5a6;
+    transition: 0.6s;
+  }
+  #contact .container .contact li:first-child{
+    margin-right: 50px;
+  }
 @media screen and (max-width: 768px) {
   .typewrite{
 
     font-size: 2.3rem;
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
+}
+.header_Nav a:not(:first-child) {
+  display: none;
+}
+.header_Nav a.icon {
+  float: right;
+  display: block;
+}
+.header_Nav.responsive{position: relative;
+  position: fixed;
+  top:0;
+}
+.header_Nav.responsive a.icon{
+  position: absolute;
+  right: 0;
+  top: 0;
+  
+}
+.header_Nav.responsive a{
+  float: none;
+  display: block;
+  text-align: center
 }
   #about_me .container{
     display: flex;
@@ -155,12 +297,31 @@
   #about_me .about_left .profile_pic::after{
     display: none;
   }
+  #project .container .project_content .project_right{
+    width: 300px;
+    height: 370px;
+  }
   #about_me .about_right dl{
     margin-top: 30px;
     text-align: center;
   }
 
-
+  #project .container .project_content{
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  #project .container .project_content .project_left{
+    margin-right: 0;
+    margin-bottom: 30px;  
+  } 
+  #project .container .project_content .project_right p{
+    text-align: center;
+  }
+  #project .container .project_content .project_right ul{
+    margin-top: 10px;
+    justify-content: center;
+  }
 
 
 }
@@ -172,34 +333,36 @@
     font-family: 'Noto Sans KR', sans-serif;
     font-weight: 700;
 }
-.header_Nav{
 
-  }
- .header_Nav a:not(:first-child) {
-   display: none;
- }
- .header_Nav a.icon {
-   float: right;
-   display: block;
- }
- .header_Nav.responsive{position: relative;
-   position: fixed;
-   top:0;}
- .header_Nav.responsive a.icon{
-   position: absolute;
-   right: 0;
-   top: 0;
-   
- }
- .header_Nav.responsive a{
-   float: none;
-   display: block;
-   text-align: center
- }
  #skills .container ul li{
   font-size: 120px;
   margin-left:15px;
   margin-right:15px;
+  }
+  #project .container .project_content{
+    margin-bottom: 0;
+  }
+  
+#project .container .project_content .project_left img{
+  width: 250px;
+  height: 250px;
+}
+  #project .container .project_content .project_right{
+    width: 300px;
+    height: 300px;
+  }
+  #project .container .project_content .project_right p{
+    font-size: 1.7rem;
+    text-align: center;
+  }
+  #project .container .project_content .project_right .content{
+    font-size: 0.9rem;
+    text-align: center;
+  }
+ 
+  #project .container .project_content .project_right li{
+    font-size: 1rem;
+    
   }
 }
 
@@ -227,4 +390,4 @@
   margin-right:10px;
 
   }
-  }
+}

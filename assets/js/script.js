@@ -1,3 +1,4 @@
+//  header toggle
 function headerToggle() {
 
     let header = document.getElementById("headerNav");
@@ -7,3 +8,4 @@ function headerToggle() {
       header.className = "header_Nav";
     }
   }
+
